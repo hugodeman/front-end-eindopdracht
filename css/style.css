@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: rosybrown;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vw 5vw;
+    background-color: rgba(87, 28, 28, 0.29);
+}
+
+#link {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.logo-button {
+    background-color: black;
+    cursor: pointer;
+}
+
+.logo {
+    width: 80px;
+}
+
+nav a {
+    display: flex;
+    text-decoration: none;
+    padding: 3vh 2vw;
+    color: black;
+    gap: 10px;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+header {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 15vw 0;
+    background-image: url(../images/achtergrond.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+#flex-header {
+    display: flex;
+    flex-direction: column;
+}
+
+header button,
+section button {
+    margin-top: 10px;
+    padding: 2vh;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+}
+
+header button:hover,
+section button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+}
+
+#onze_producten {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex: 1 0 0;
+    margin: 0 10vw;
+}
+
+#onze_producten div {
+    background-color: rgba(181, 11, 11, 0.27);
+    border-top: 1px solid black;
+}
+
+.producten {
+    padding: 0 5vh 5vh 5vh;
+    height: 100%;
+}
+
+.border {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    box-shadow: 3px 4px 10px black;
+}
+
+.prijs {
+    padding: 2px 0;
+}
+
+.star-rating {
+    display: flex;
+    background-color: rgba(181, 11, 11, 0.27);
+}
+
+.rating {
+    color: yellow;
+    width: 100%;
+    padding: 2vh;
+}
+
+.star {
+    color: gray;
+    padding: 2vh;
+    width: 100%;
+}
+
+.beschrijving {
+    font-size: 1.1rem;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+section img {
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+}
+
+section p {
+    margin: 0px;
+    padding: 0.5vh;
+}
+
+#formulier {
+    background-color: rgba(214, 24, 24, 0.158);
+    margin-top: 7vh;
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    padding-bottom: 10vh;
+    width: 60%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex: 1;
+}
+
+input[type=text],
+input[type=date],
+input[type=submit],
+select,
+textarea {
+    padding: 2vh 0.5vw;
+    width: 100%;
+    font-size: 1rem;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+input[type=text]:valid,
+input[type=date]:valid,
+option {
+    border: 3px solid green;
+    background-color: lightgreen;
+}
+
+input[type=submit] {
+    margin-top: 2vh;
+    background-color: black;
+    color: white;
+}
+
+#radio {
+    display: flex;
+    gap: 2vw;
+}
+
+#form h2 {
+    text-align: center;
+}
+
+.flexform {
+    display: flex;
+    gap: 3vw;
+}
+
+footer {
+    background-color: rgb(5, 5, 62);
+    color: white;
+    padding: 5vh 10vw 0vh 10vw;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#footer-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    text-decoration: none;
+    color: blueviolet;
+    padding-right: 3vw;
+}
+
+#informatie {
+    display: flex;
+}
+
+label,
+.spacer {
+    padding-top: 2vh;
+}
+
+footer a:hover {
+    color: white;
+}
+
+#img-flex {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    gap: 1vw;
+    padding-bottom: 4vh;
+}
+
+#img-flex img {
+    width: 50px;
+    flex: 1 0 0;
+}
+
+#img-flex img:hover {
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #link {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-button {
+        width: 50%;
+    }
+
+    header {
+        margin: 0;
+    }
+
+    #onze_producten {
+        flex-direction: column;
+    }
+
+    .flexform {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #form {
+        align-items: start;
+        width: 100%;
+        padding: 0 2vw;
+    }
+
+    .flex {
+        width: 100%;
+    }
+
+    #footer {
+        flex-direction: column;
+    }
+
+    #form button {
+        width: 100%;
+        margin-bottom: 15vh;
+    }
+
+    #footer-flex {
+        flex-direction: column;
+    }
+
+    #informatie {
+        flex-direction: column;
+    }
+
+    footer a {
+        padding: 2vh 0;
+    }
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eindproduct</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <button class="logo-button">
+            <div>
+                <img class="logo" src="/images/blanket_1.png" loading="lazy">
+            </div>
+        </button>
+        <div id="link">
+            <a href="#link">Home</a>
+            <a href="#flex-header">Voorpagina</a>
+            <a href="#link-producten">Onze producten</a>
+            <a href="#formulier">Formulier</a>
+            <a href="#link-footer">Informatie</a>
+        </div>
+    </nav>
+
+    <header>
+        <div id="flex-header">
+            <div>
+                <h1>Koop nu je deken!</h1>
+            </div>
+            <div>
+                <p>Heb jij het altijd koud of wil je gewoon lekker genieten van warmte? Koop dan nu je eigen deken.
+                </p>
+            </div>
+            <div>
+                <button onclick="document.location='#link-producten'">Onze producten</button>
+                <button onclick="document.location='#formulier'">Formulier</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="link-producten">
+            <h2>Onze producten</h2>
+            <div id="onze_producten">
+                <div class="border">
+                    <div>
+                        <img src="./images/deken1.jpg" loading="lazy">
+                    </div>
+                    <div class="producten">
+                        <h3>Wollen deken</h3>
+                        <h3 class="prijs">$50</h3>
+                        <div class="star-rating">
+                            <div class="rating">★</div>
+                            <div class="rating">★</div>
+                            <div class="rating">★</div>
+                            <div class="rating">★</div>
+                            <div class="rating">★</div>
+                        </div>
+                        <p class="beschrijving">dit deken is zo zacht dat je bijna opstijgt. !Gebruik op eigen risico!
+                        </p>
+                        <p>bruin</p>
+                        <p>wol</p>
+                        <p>topkwaliteit</p>
+                        <p>160 x 140cm</p>
+                        <button onclick="document.location='bestel.html'">bestel</button>
+                    </div>
+                </div>
+                <div class="border">
+                    <div>
+                        <img src="./images/deken2.jpg" loading="lazy">
+                    </div>
+                    <div class="producten">
+                        <h3>fleece deken</h3>
+                        <h3 class="prijs">$15</h3>
+                        <div class="star-rating">
+                            <div class="rating">★</div>
+                            <div class="rating">★</div>
+                            <div class="rating">★</div>
+                            <div class="star">★</div>
+                            <div class="star">★</div>
+                        </div>
+                        <p class="beschrijving">een lekker en niet al te warm deken perfect voor de tussenseizoenen</p>
+                        <p>lime</p>
+                        <p>katoen</p>
+                        <p>150 x 120cm</p>
+                        <button onclick="document.location='bestel.html'">bestel</button>
+                    </div>
+                </div>
+                <div class="border">
+                    <div>
+                        <img src="./images/deken3.jpg" loading="lazy">
+                    </div>
+                    <div class="producten">
+                        <h3>katoen deken</h3>
+                        <h3 class="prijs">$40</h3>
+                        <div class="star-rating">
+                            <div class="rating">★</div>
+                            <div class="rating">★</div>
+                            <div class="rating">★</div>
+                            <div class="rating">★</div>
+                            <div class="star">★</div>
+                        </div>
+                        <p class="beschrijving">dit mooie deken voelt ook nog eens heerlijk aan, best gebruikt tijdens
+                            een bankzitterij met popcorn en een film. </p>
+                        <p>bruin</p>
+                        <p>katoen</p>
+                        <p>150 x 130cm</p>
+                        <button onclick="document.location='bestel.html'">bestel</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formulier">
+            <h2>Formulier</h2>
+            <div id="form">
+                <form action="">
+                    <div class="flexform">
+                        <div class="flex">
+                            <label for="voornaam">Voornaam</label>
+                            <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" required>
+                        </div>
+                        <div class="flex">
+                            <label for="achternaam">Achternaam</label>
+                            <input type="text" id="achternaam" name="achternaam" placeholder="Achternaam" required>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="flexform">
+                        <div class="flex">
+                            <label for="woonplaats">Woonplaats</label>
+                            <input type="text" id="woonplaats" name="woonplaats" placeholder="Woonplaats" required>
+                        </div>
+                        <div class="flex">
+                            <label for="geboortedatum">Geboortedatum</label>
+                            <input type="date" id="geboortedatum" name="geboortedatum" placeholder="Geboortedatum"
+                                required>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <label for="onderwerp">Onderwerp</label>
+                        <select id="onderwerp" name="onderwerp">
+                            <option selected disabled>Kies onderwerp van het bericht...</option>
+                            <option required>klacht</option>
+                            <option required>compliment</option>
+                        </select>
+                    </div>
+                    <div class="flex">
+                        <label for="bericht">Bericht</label>
+                        <textarea id="bericht" name="bericht"></textarea>
+                    </div>
+                    <div class="spacer">
+                        <div>
+                            <label for="nieuwsbrief">Inschrijven voor nieuwsbrief?</label>
+                        </div>
+                        <div id="radio">
+                            <div>
+                                <input type="radio" id="nieuwsbrief" name="nieuwsbrief" required>
+                                <label>Ja</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="nieuwsbrief" name="nieuwsbrief" required>
+                                <label>Nee</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer">
+                        <input type="checkbox" id="voorwaarden" name="voorwaarden" required>
+                        <label for="checkbox">Ik ga akkoord met de algemene voorwaarden</label>
+                    </div>
+                    <input type="submit" value="verstuur">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="link-footer">
+        <div>
+            <button class="logo-button">
+                <div>
+                    <img class="logo" src="/images/blanket_1.png" loading="lazy">
+                </div>
+            </button>
+            <div id="footer">
+                <div id="footer-flex">
+                    <div>
+                        <p>Copyright 2023 Blanket Store</p>
+                    </div>
+                    <div id="img-flex">
+                        <div>
+                            <img src="./images/instagram.png" loading="lazy">
+                        </div>
+                        <div>
+                            <img src="./images/facebook.png" loading="lazy">
+                        </div>
+                        <div id="twitter">
+                            <img src="./images/twitter.png" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div id="informatie">
+                    <a href="privacy.html" target="_blank">Privacyverklaring</a>
+                    <a href="voorwaarden.html" target="_blank">Algemene voorwaarden</a>
+                    <a href="cookie.html" target="_blank">Cookiebeleid</a>
+                    <a href="contact.html" target="_blank">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
